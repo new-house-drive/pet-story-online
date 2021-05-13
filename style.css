@@ -20,10 +20,11 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(255, 226, 193);
-    padding-left: 0% !important;
-    margin: 0% !important;
+    background-color: white;
+    width: 100%;
     color: black;
+
+    max-width: 1600px;
 }
 
 /* Header */
@@ -36,14 +37,17 @@ body {
     top:0;
     left:0;
     right: 0;
+
     z-index: 2;
 
     grid-template-columns: repeat(6, auto);
     grid-template-rows: 6rem;
     column-gap: 1em;
 
+    max-width: 100%;
+
     text-align: left;
-    padding-right: 40%;
+    padding-right: 35%;
     
 }
 
@@ -102,8 +106,8 @@ body {
 }
 
 .top-image-container img {
-    width: 1600px;
-    height: 780px;
+    max-width: 1600px;
+    max-height: 780px;
 }
 
 .big-orange-dot {
@@ -112,8 +116,8 @@ body {
     left: 55rem;
     top: 7rem;
 
-    width: 25rem;
-    height: 25rem;
+    width: 30rem;
+    height: 30rem;
     z-index: 2;
 
     border-radius: 50%;
@@ -123,14 +127,13 @@ body {
 .image-title {
     color: white;
     width: 6em;
-    top: 11rem;
-    left: 59rem;
+    top: 9rem;
+    left: 55rem;
 
     position: absolute;
-    font-size: 4rem;
+    font-size: 6rem;
     
-    font-family: 'Roboto', sans-serif;
-    font-weight: 1000;
+    font-weight: 950;
 
     text-align: center;
     line-height: 0.9em;
@@ -146,8 +149,8 @@ body {
 
 .image-button-container {
     position: absolute;
-    top: 35em;
-    left: 58em;
+    top: 40em;
+    left: 70em;
 }
 
 
@@ -174,9 +177,27 @@ body {
 }
 
 /** ARTICLES CONTAINER */
-.articles {
+.gallery-top-container {
     position: relative;
     width: 100%;
     display: grid;
-    border: blue 3px solid;
+    grid-template-columns: 45em 45em;
+    padding: 12%;
+}
+
+.gallery-top-element {
+    position: relative;
+    max-width: 30em;
+    padding: 0;
+    text-align: block;
+}
+
+.gallery-top-title {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.gallery-top-text {
+    font-weight: 300;
 }
