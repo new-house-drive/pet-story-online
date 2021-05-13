@@ -14,7 +14,10 @@
             title-orange-word
         4.1.4 image-button-container
         4.1.5 image button
-    4.2 ARTICLES
+    4.2 GALLERY TOP CONTAINER
+        4.2.1 gallery-top-element
+        4.2.2 gallery-top-title
+        4.2.3 gallery-top-text
 
 */
 
@@ -176,7 +179,7 @@ body {
     background-color: rgb(255, 169, 89);
 }
 
-/** ARTICLES CONTAINER */
+/** GALLERY TOP CONTAINER */
 .gallery-top-container {
     position: relative;
     width: 100%;
