@@ -1,34 +1,44 @@
 /** SUMMARY **/
 /* 1. ROOT
 /* 2. BODY
-/* 3. HEADER
-    3.1 header-element
-        3.1.1 header-element a
-        3.1.2 #first-element-id !! MEDIA QUERY ELEMENT
+/* 3. CONTENT
+/*  3.1. HEADER
+        3.1.1 header-element
+        3.1.2 bamboo-logo
+        3.1.3 header-element a
+        3.1.4 #first-element-id
 
-/* 4. CONTENT !! MEDIA QUERY ELEMENT
-    4.1 TOP IMAGE CONTAINER 
-        4.1.1 top-image-container img !! MEDIA QUERY ELEMENT 
-        4.1.2 big-orange-dot
-        4.1.3 image-title
+/*  
+    3.2 TOP IMAGE CONTAINER 
+        3.2.1 top-image-container img
+        3.2.2 big-orange-dot
+        3.2.3 image-title
             title-orange-word
-        4.1.4 image-button-container
-        4.1.5 image button
-    4.2 GALLERY TOP CONTAINER
-        4.2.1 gallery-top-element
-        4.2.2 gallery-top-title
-        4.2.3 gallery-top-text
+        3.2.4 image-button-container
+        3.2.5 image button
+    3.3 GALLERY TOP CONTAINER
+        3.3.1 gallery-top-element
+        3.3.2 gallery-top-title
+        3.3.3 gallery-top-text
+        3.3.4 flower-photo
 
 */
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: white;
-    width: 100%;
     color: black;
-
-    max-width: 1600px;
+    padding: 0 !important;
+    margin: 0 !important;
 }
+
+
+/* CONTENT */
+#content {
+    display: grid;
+    grid-template-columns: 1600px;
+}
+
 
 /* Header */
 .header {
@@ -51,12 +61,13 @@ body {
 
     text-align: left;
     padding-right: 35%;
+
+    padding-left: 15em;
     
 }
 
 .header-element {
     color:white;
-    display: block;
     position: relative;
 
     margin: auto;
@@ -64,6 +75,12 @@ body {
     text-align: left;
     font-size: large;
 
+}
+
+.bamboo-logo {
+    position: absolute;
+    top: 1.5em;
+    left: 0.9em;
 }
 
 .header-element a {
@@ -80,25 +97,15 @@ body {
     border: white 1px solid;
     color: white;
 
+
     text-align: center;
     font-size: large;
     padding: 0.5em;
 
     max-width: 5em;
-
-    /** MEDIA QUERY ELEMENT */
-    margin-left: 15em;
-    
     
         
 }
-
-/* CONTENT */
-#content {
-    display: grid;
-    grid-template-columns: 1600px;
-}
-
 
 
 .top-image-container {
@@ -185,14 +192,20 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 45em 45em;
-    padding: 12%;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.gallery-top-image {
+   padding-left: 11em; 
+
 }
 
 .gallery-top-element {
     position: relative;
     max-width: 30em;
-    padding: 0;
     text-align: block;
+    padding-left: 11em;
 }
 
 .gallery-top-title {
@@ -203,4 +216,24 @@ body {
 
 .gallery-top-text {
     font-weight: 300;
+}
+
+.flower-photo {
+    position: absolute;
+    right: 0;
+    top: 1em;
+}
+
+/** GALLERY */
+
+.gallery-container {
+    position: relative;
+    padding: 10%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1em;
+    row-gap: 1em;
 }
