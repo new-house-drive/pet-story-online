@@ -13,7 +13,7 @@
         3.2.1 top-image-container img
         3.2.2 big-orange-dot
         3.2.3 image-title
-            title-orange-word
+                title-orange-word
         3.2.4 image-button-container
         3.2.5 image button
     3.3 GALLERY TOP CONTAINER
@@ -21,6 +21,18 @@
         3.3.2 gallery-top-title
         3.3.3 gallery-top-text
         3.3.4 flower-photo
+    3.4 GALLERY CONTAINER
+        3.4.1 gallery
+        3.4.2 gallery-element
+                img
+                gallery-text-title
+                gallery-text-paragraph
+        3.4.3 gallery-bottom-button
+                button
+                button:hover
+
+
+
 
 */
 
@@ -228,12 +240,71 @@ body {
 
 .gallery-container {
     position: relative;
-    padding: 10%;
+
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 20%;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 366px);
     column-gap: 1em;
     row-gap: 1em;
+}
+
+
+/** GALLERY ELEMENT */
+
+.gallery-element {
+    border:rgb(255, 115, 0) 2px solid;
+    border-radius: 0.2em;
+    overflow: hidden;
+}
+
+.gallery-element img {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.gallery-text-title {
+    text-transform: uppercase;
+    padding-top: 0.2em;
+    font-weight: 700;
+    padding-left: 1em;
+}
+
+.gallery-text-paragraph {
+    font-weight: 200;
+    padding-left: 1em;
+    padding-bottom: 1em;
+
+}
+
+
+/** GALLERY BOTTOM BUTTON */
+
+.gallery-bottom-button {
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    width: 20%;
+}
+
+.gallery-bottom-button button {
+    background-color: rgb(212, 117, 27);
+    color: white;
+    width: 100%;
+    padding: 1em;
+    border-radius: 2em;
+    margin-top: 3em;
+    border: none;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.gallery-bottom-button button:hover {
+    background-color: rgb(255, 222, 73);
 }
