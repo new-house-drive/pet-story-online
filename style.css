@@ -448,6 +448,7 @@ body {
     padding-top: 2em;
     padding-left: 15%;
     padding-right: 10%;
+    border-radius: 2em;
 }
 
 .donate-top-text{
@@ -459,5 +460,31 @@ body {
 
 .donate-bigger-text {
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.4em;
+    padding-bottom: 1em;
+}
+
+.donate-medium-text {
+    font-weight: 600;
+}
+
+.donate-smaller-text {
+    padding-top: 1em;
+    font-weight: 300;
+}
+.donate-slides-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: relative;
+}
+
+.donate-slides-title {
+    padding-top: 1em;
+    font-size: 2em;
+    columns: 0/6;
+    text-align: center;
+}
+
+.donate-slides-element {
+
 }
