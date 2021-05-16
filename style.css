@@ -40,10 +40,23 @@
                 gallery-decoration-palm-tree
                 gallery-decoration-flower
 
+        3.4.6 donate-container
+
+
 
 
 
 */
+
+html {
+    font-size: medium;
+}
+
+:root {
+    --content-padding: 13.5%; 
+}
+
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -58,8 +71,11 @@ body {
 #content {
     display: grid;
     grid-template-columns: 1600px;
+    grid-template-rows: auto;
     overflow: hidden;
     position: relative;
+    max-width: 1600px;
+
 }
 
 
@@ -74,13 +90,11 @@ body {
     left:0;
     right: 0;
 
-    z-index: 2;
-
+    z-index: 1;
+    font-size: medium;
     grid-template-columns: repeat(6, auto);
-    grid-template-rows: 6rem;
-    column-gap: 1em;
-
-    max-width: 100%;
+    grid-template-rows: 6em;
+    column-gap: 1rem;
 
     text-align: left;
     padding-right: 35%;
@@ -144,13 +158,13 @@ body {
 }
 
 .big-orange-dot {
-    background-color: rgb(189, 95, 8);
+    background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     position: absolute;
-    left: 55rem;
-    top: 7rem;
+    left: 55em;
+    top: 7em;
 
-    width: 30rem;
-    height: 30rem;
+    width: 30em;
+    height: 30em;
     z-index: 2;
 
     border-radius: 50%;
@@ -159,25 +173,26 @@ body {
 
 .image-title {
     color: white;
-    width: 6em;
-    top: 9rem;
-    left: 55rem;
-
-    position: absolute;
-    font-size: 6rem;
     
-    font-weight: 950;
+    width: 6em;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 6.7em;
+    font-weight: bold;
 
     text-align: center;
-    line-height: 0.9em;
+    line-height: 0.75em;
 
+    padding-left: 0.1em;
+    padding-top: 0.7em;
 
-    z-index: 3;    
+    z-index: 2;    
 
 }
 
 .title-orange-word {
-    color: rgb(255, 222, 73);
+    color: #FFEE2E;
 }
 
 .image-button-container {
@@ -188,8 +203,6 @@ body {
 
 
 .image-button {
-    
-
     background-color: rgb(189, 95, 8);
     color: white;
 
@@ -209,60 +222,75 @@ body {
     background-color: rgb(255, 169, 89);
 }
 
-/** GALLERY TOP CONTAINER */
-.gallery-top-container {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 45em 45em;
-    padding-top: 6em;
-    padding-bottom: 6em;
-}
 
-.gallery-top-image {
-   padding-left: 11em; 
-
-}
-
-.gallery-top-element {
-    position: relative;
-    max-width: 30em;
-    text-align: block;
-    padding-left: 11em;
-}
-
-.gallery-top-title {
-    font-size: 3em;
-    font-weight: bold;
-    margin-top: 0;
-}
-
-.gallery-top-text {
-    font-weight: 300;
-}
-
-.flower-photo {
-    position: absolute;
-    right: 0;
-    top: 1em;
-}
 
 /** GALLERY */
 
 .gallery-container {
     position: relative;
 
-    padding-left: 15%;
-    padding-right: 20%;
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
     padding-top: 5%;
     padding-bottom: 15%;
+
+    
 }
+
+/** GALLERY TOP CONTAINER */
+.gallery-top-container {
+    position: relative;
+    display: grid;
+
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+
+    padding-top: 6em;
+    padding-bottom: 6em;
+
+    column-gap: 8%;
+    margin-bottom: 5%;
+}
+
+
+.gallery-top-element {
+    padding: 0;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.gallery-top-element-image {
+    padding-right: 0;
+}
+
+.gallery-top-title {
+    font-size: 2.7em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.gallery-top-text {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.bottom-aligned {
+    display: flex;
+    align-self: flex-end;
+}
+
+
+
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 366px);
+    grid-template-columns: repeat(3, auto);
     column-gap: 1em;
     row-gap: 1em;
+
+    position: relative;
 }
 
 
@@ -338,27 +366,42 @@ body {
 
 /** GALLERY NAVIGATION BUTTONS */
 
-.gallery-left-button, .gallery-right-button {
-    border-radius: 60%;
-    background-color: rgb(255, 145, 0);
-    color: white;
+.gallery-navbar {
+    display: flex;
+    align-items: center;
     position: absolute;
-    width: 5rem;
-    height: 5rem;
-    text-align: center;
-    font-size: 2em;
-    border: none;
-    font-weight: 100;
+    height: 100%;
+    width: 100%;
 }
 
+
+
+.gallery-left-button, .gallery-right-button {
+    border-radius: 60%;
+    border: none;
+
+    background-color: rgb(255, 145, 0);
+    color: white;
+
+    width: 3em;
+    height: 3em;
+
+    text-align: center;
+    font-size: 2em;
+    
+    font-weight: 100;
+
+}
+
+
 .gallery-left-button {
-    left: 7.5%;
-    top: 39%;
+    position: absolute;
+    left: -10%;
 }
 
 .gallery-right-button {
-    right: 7.5%;
-    top: 39%;
+    position: absolute;
+    right: -10%;
 }
 
 .gallery-right-button:hover, .gallery-left-button:hover {
@@ -366,6 +409,12 @@ body {
 }
 
 /** GALLERY DECORATION IMAGES */
+.gallery-decoration-top-flower {
+    position: absolute;
+    right: 0;
+    top: 1em;
+}
+
 
 .gallery-decoration-palm-tree {
     position: absolute;
@@ -377,4 +426,38 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+
+
+
+.donate-container {
+    background-image: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    opacity: 0.9;
+    padding-left: var(--content-padding);
+    padding-right: var(--content-padding);
+    padding-top: 7%;
+    padding-bottom: 5%;
+    margin-top: -0.3em;
+
+}
+
+.donate {
+    background-color: #FDFDFF85;
+    text-align: start;
+    padding-top: 2em;
+    padding-left: 15%;
+    padding-right: 10%;
+}
+
+.donate-top-text{
+    color: #FE9013;
+    font-size: 3em;
+    text-align: center;
+    
+}
+
+.donate-bigger-text {
+    font-weight: 400;
+    font-size: 1.5em;
 }
