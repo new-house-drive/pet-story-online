@@ -446,8 +446,7 @@ body {
     background-color: #FDFDFF85;
     text-align: start;
     padding-top: 2em;
-    padding-left: 15%;
-    padding-right: 10%;
+    padding-left: 10%;
     border-radius: 2em;
 }
 
@@ -455,6 +454,9 @@ body {
     color: #FE9013;
     font-size: 3em;
     text-align: center;
+    margin: auto;
+    padding-right: 20%;
+    padding-left: 10%;
     
 }
 
@@ -465,26 +467,147 @@ body {
 }
 
 .donate-medium-text {
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .donate-smaller-text {
     padding-top: 1em;
     font-weight: 300;
+    padding-right: 20%;
 }
 .donate-slides-container {
     display: grid;
     grid-template-columns: auto auto auto;
     position: relative;
+    column-gap: 6em;
+    padding-left: 2em;
+    padding-right: 20%;
 }
 
 .donate-slides-title {
     padding-top: 1em;
     font-size: 2em;
-    columns: 0/6;
+    grid-column: 1/ 4;
     text-align: center;
+    margin: auto;
+    margin-bottom: 1em;
+
 }
 
 .donate-slides-element {
+    max-width: 168px;
+    margin: auto;
+    margin-top: 0;
+}
 
+.donate-slides-element p {
+    margin-top: 2em;
+}
+
+.donate-slides-element-image {
+    background-color: white;
+    position: relative;
+    width: 168px;
+    height: 168px;
+
+    border: tomato 1px solid;
+    border-radius: 5px;
+    
+}
+
+.donate-slides-element-image img {
+    position: absolute;
+}
+
+#pay-image {
+    left: 1.5em;
+    top: 3em;
+
+}
+
+#hand-with-plant-img {
+    bottom: 2em;
+    left: 2.5em;
+    right: 2.5em;
+}
+
+#stable-img {
+    bottom: 3.3em;
+    left: 4.5em;
+    right: 3em;
+}
+
+#bottom-leaf-img {
+    bottom: 4em;
+    left: 4.9em;
+}
+
+#middle-leaf-img {
+    left: 3.7em;
+    bottom: 5.1em;
+}
+
+#top-leaf-img {
+    left: 5em;
+    bottom: 6em;
+}
+
+#dollar-sign-img {
+    left: 4.6em;
+    bottom: 6.8em;
+}
+
+#banana-img {
+    
+    left: 1.5em;
+    bottom: 3em;
+
+}
+
+#monkey-img {
+
+    right: 1.5em;
+    bottom: 3em;
+
+}
+
+#monkey-left-eye-img {
+
+    left: 4.8em;
+    bottom: 6.3em;
+}
+
+#monkey-right-eye-img {
+
+
+    left: 5.4em;
+    bottom: 6.3em;
+}
+
+#monkey-smile-img {
+
+    left: 5em;
+    bottom: 5.6em;
+}
+
+.donate-slides-button {
+    background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);;
+    color: white;
+
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 2em;
+    grid-column: 1/4;
+    border: none;
+
+    padding: 1em;
+    padding-right: 4em;
+    padding-left: 4em;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.donate-slides-button:hover {
+    background-image: linear-gradient(113.96deg, #fca17a 1.49%, #fdaa4c 101.44%);
 }
