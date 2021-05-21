@@ -651,7 +651,7 @@ body {
 }
 
 .donate-slides-button {
-    background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);;
+    background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     color: white;
 
     margin: auto;
@@ -685,4 +685,73 @@ body {
     position: absolute;
     right: 36%;
     bottom: 39%;
+}
+
+
+
+
+/* TESTIMONIALS ELEMENT */
+
+.testimonials-container {
+    display: grid;
+    position: relative;
+
+    padding: 10%;
+
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1em;
+    
+
+}
+
+.testimonials-title {
+    font-size: 2em;
+
+    grid-column: 1 / 5;
+
+    text-align: center;
+
+    margin-bottom: 1em;
+
+}
+
+.testimonials-element-wrap {
+    border-radius: 2em;
+    padding: 2px;
+    overflow: hidden;
+
+    background-image: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+}
+
+
+.testimonials-element {
+    display: grid;
+    
+    grid-template-columns: auto auto;
+
+    background-color: #F1F3F2;
+
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    border-radius: 2em;
+
+}
+
+.testimonials-leave-feedback {
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+
+    padding: 1em 0em;
+
+    margin-right: -1em;
+
+
+    background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)
 }
