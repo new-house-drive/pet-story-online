@@ -174,7 +174,7 @@ body {
     color: rgb(255, 115, 0);
 }
 
-#header-first-element {
+.website-logo {
     background-color: black;
     border: white 1px solid;
     color: white;
@@ -580,8 +580,6 @@ body {
 }
 
 
-
-
 #hand-with-plant-img {
     bottom: 2em;
     left: 2.5em;
@@ -613,8 +611,6 @@ body {
     left: 4.6em;
     bottom: 6.8em;
 }
-
-
 
 
 #banana-img {
@@ -696,12 +692,12 @@ body {
     display: grid;
     position: relative;
 
-    padding: 10%;
-
-    grid-template-columns: auto auto auto auto;
-    column-gap: 1em;
+    padding: 12%;
     
 
+    grid-template-columns: auto auto auto auto;
+    column-gap: 2em;
+    
 }
 
 .testimonials-title {
@@ -711,49 +707,116 @@ body {
 
     text-align: center;
 
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 
 }
 
 .testimonials-element-wrap {
     border-radius: 2em;
-    padding: 2px;
+    padding: 3px;
+    align-items: center;
     overflow: hidden;
+    position: relative;
+
+    width: 100%;
+    
 
     background-image: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 }
 
 
 .testimonials-element {
-    display: grid;
-    
-    grid-template-columns: 4em auto;
 
+    position: relative;
+    align-self: center;
     background-color: #F1F3F2;
 
     padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
+    padding-bottom: 1em;
+
 
     border-radius: 2em;
+    overflow: hidden;
 
+    min-width: 90%;
+    min-height: 92%;
+
+}
+
+
+.testimonials-profile-info {
+    position: relative;
+    
 }
 
 .testimonials-userpic {
-    grid-row: 0/ 2;
-    min-width: 2em;
-    min-height: 2em;
+    position: absolute;
+
+    left: 0;
+}
+
+.testimonials-username {
+    position: absolute;
+    
+    font-weight: 400;
+    font-size: 1.2em;
+
+
+    left: 2.5em;
+    top: 0;
 }
 
 .testimonials-location-time {
+    position: absolute;
 
+    color: rgba(189, 189, 189, 1);
+    
+    left: 3em;
+    top: 1.2em;
 }
 
 .testimonials-feedback-text {
-    grid-column: 0/ 2;
+
+    margin-top: 3em;
+    color: rgba(118, 116, 116, 1);
+    
+    overflow: hidden;
+
+    max-height: 20em;
+
+    
+    
+}
+
+.testimonials-scroll-bar {
+    grid-column: 1 / 5;
+    height: 0.5em;
+    margin-top: 2em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2em;
+    position: relative;
+
+    border-radius: 10%;
+    overflow: hidden;
+    background-color: rgba(245, 247, 246, 1);
+    
+}
+
+.testimonials-orange-scroll {
+    background-color: rgba(254, 144, 19, 1);
+    min-width: 20%;
+    min-height: 100%;
+    position: absolute;
+    left: 0;
 }
 
 .testimonials-leave-feedback {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
 
     border: none;
     border-radius: 5px;
@@ -761,11 +824,124 @@ body {
     color: white;
     text-transform: uppercase;
     font-weight: 800;
+    font-size: 1.2em;
 
-    padding: 1em 0em;
+    min-height: 2em;
 
-    margin-right: -1em;
+    padding: 1em 4em;
 
 
     background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)
+}
+
+.testimonials-leaf-decorations {
+
+    position: absolute;
+
+    bottom: -8em;
+    right: 0;
+}
+
+/* FOOTER */
+
+.footer-container {
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: relative;
+    padding: 3em 10%;
+
+}
+
+.footer-content {
+    position: relative;
+}
+
+.footer-website-logo {
+    position: relative;
+    border: white 1px solid;
+    padding: 0.1em;
+    font-weight: 800;
+    font-size: 1.1em;
+    text-align: center;
+    max-width: 5em;
+}
+
+.footer-bamboo-logo {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+}
+
+
+.footer-donate-button {
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2em;
+
+    min-height: 2em;
+
+    padding: 1.5em 4em;
+
+    margin-top: 4em;
+
+    background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)   
+}
+
+
+.footer-social-media-container {
+    display: grid;
+    grid-template-columns: 2em 8em;
+    column-gap: 1em;
+    margin-top: 10em;
+}
+
+.footer-social-media-logo {
+    position: relative;
+    
+    width: 2em;
+    height: 2em;
+
+    margin: 0.5em;
+
+    background-color: rgba(196, 196, 196, 0.5);
+    border-radius: 50%;
+}
+
+.footer-social-media-logo img {
+    position: absolute;
+    top: 0.6em;
+    left: 0.5em;
+}
+
+.footer-social-media-name {
+
+    font-weight: 900;
+    padding-top: 1em;
+}
+
+.footer-bottom-links {
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 1em;
+
+    position: absolute;
+
+    bottom: 0;
+    left: 25%;
+    right: 40%;
+    font-size: 1.5em;
+
+}
+
+.footer-bottom-links a {
+
+    text-decoration: none;
+    color: white;
 }
