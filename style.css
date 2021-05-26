@@ -1,33 +1,33 @@
 /** SUMMARY **/
-/* 1. ROOT
-/* 2. BODY
-/* 3. CONTENT
-/*  3.1. HEADER
-        3.1.1 header-element
-        3.1.2 bamboo-logo
-        3.1.3 header-element a
-        3.1.4 header-element a:hover
-        3.1.5 #header-first-element
+/* ROOT
+/* BODY
+/* CONTENT
+/*  1. HEADER
+        1.1 .header-element
+        1.2 .bamboo-logo
+        1.3 .header-element a
+        1.4 .header-element a:hover
+        1.5 .website-logo
 
 /*  
-    3.2 TOP IMAGE CONTAINER 
-        3.2.1 top-image-container img
-        3.2.2 top-image-big-orange-dot
-        3.2.3 top-image-title
-                top-image-title-orange-word
-        3.2.4 top-image-button-container
-        3.2.5 top-image-button
-        3.2.6 top-image-button:hover
+    2 TOP IMAGE CONTAINER 
+        2.1 .top-image-container img
+        2.2 .top-image-big-orange-dot
+        2.3 .top-image-title
+                #top-image-title-orange-word
+        2.4 .top-image-button-container
+        2.5 .top-image-button
+        2.6 .top-image-button:hover
 
-    3.3 GALLERY
-        3.3.1 .gallery-container
-        3.3.2 .gallery-top-container
-        3.3.3 .gallery-top-element
+    3 GALLERY
+        3.1 .gallery-container
+        3.2 .gallery-top-container
+        3.3 .gallery-top-element
                 .gallery-top-element-image
                 .gallery-top-title
                 .gallery-top-text
                 .bottom-aligned
-        3.3.4 .gallery
+        3.4 .gallery
                 .gallery-element
                     .gallery-element img
                     .gallery-text-title
@@ -47,20 +47,20 @@
                     .gallery-decoration-palm-tree
                     .gallery-decoration-flower
     
-    3.4 DONATE CONTAINER
-        3.4.1 .donate
+    4 DONATE CONTAINER
+        4.1 .donate
                 .donate-top-text
                 .donate-bigger-text
                 .donate-medium-text
                 .donate-smaller-text
-        3.4.2 DONATE SLIDES
+        4.2 DONATE SLIDES
                 .donate-slides-container
                 .donate-slides-title
                 .donate-slides-element
                 .donate-slides-element p
                 .donate-slides-element-image
                 .donate-slides-element-image img
-        3.4.3 DONATE SLIDES PICTURES
+        4.3 DONATE SLIDES PICTURES
                 #pay-img
 
                 #hand-with-plant-img
@@ -75,11 +75,46 @@
                 #monkey-left-eye-img
                 #monkey-right-eye-img
                 #monkey-smile-img
-        3.4.4 .donate-slides-button
+        4.4 .donate-slides-button
                 .donate-slides-button:hover
-        3.4.5 NAVIGATION ARROwS
+        4.5 NAVIGATION ARROwS
                 #left-transparent-arrow-between-slides
                 #right-transparent-arrow-between-slides
+
+    5 TESTIMONIALS
+        5.1 .testimonials-container
+        5.2 .testimonials-title
+        5.3 TESTIMONIALS ELEMENT
+                .testimonials-element-wrap
+                .testimonials-element
+                .testimonials-profile-info
+                .testimonials-userpic
+                .testimonials-username
+                .testimonials-location-time
+                .testimonials-feedback-text
+        5.4 .testimonials-scroll-bar
+                .testimonials-orange-scroll
+        
+        5.5 .testimonials-leave-feedback
+        5.6 .testimonials-leaf-decorations
+    
+    6 FOOTER
+        6.1 .footer-container
+                .footer-content    
+        6.2 .footer-website-logo
+                .footer-bamboo-logo
+        6.3 .footer-donate-button
+        6.4 .footer-social-media-container
+                .footer-social-media-logo       
+                .footer-social-media-logo img
+                .footer-social-media-name
+        6.5 .footer-bottom-links
+                .footer-bottom-links a
+        6.6 .footer-designed-by
+        6.7 .footer-subscribe-container
+                .footer-subscribe-title
+                .footer-subscribe-input input
+                .footer-subscribe-button button
 
 
 
@@ -929,13 +964,13 @@ body {
 
     display: grid;
     grid-template-columns: auto auto auto auto;
-    column-gap: 1em;
+    column-gap: 1.5em;
 
     position: absolute;
 
     bottom: 0;
-    left: 25%;
-    right: 40%;
+    left: 35%;
+
     font-size: 1.5em;
 
 }
@@ -967,4 +1002,33 @@ body {
     display: grid;
 
     grid-template-columns: auto auto;
+
+    padding: 1em;
+}
+
+.footer-subscribe-title {
+    grid-column: 1 / span 2;
+
+    font-size: 1.9em;
+    font-weight: 400;
+    padding-bottom: 0.5em;
+    padding-left: 0;
+}
+
+.footer-subscribe-input input {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.7em;
+
+    border: orangered 1px solid;
+
+    max-width: 80%;
+}
+
+.footer-subscribe-button button {
+    padding: 0.7em 1.5em;
+    color: rgb(22, 92, 22);
+    border: rgb(22, 92, 22) 1px solid;
+    font-size: 1.2em;
 }
