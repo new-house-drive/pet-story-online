@@ -816,7 +816,7 @@ body {
 .testimonials-leave-feedback {
     position: absolute;
     bottom: 10%;
-    left: 10%;
+    left: 15%;
 
     border: none;
     border-radius: 5px;
@@ -828,7 +828,7 @@ body {
 
     min-height: 2em;
 
-    padding: 1em 4em;
+    padding: 1em 5em;
 
 
     background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%)
@@ -847,7 +847,6 @@ body {
 .footer-container {
     background-color: black;
     color: white;
-    width: 100%;
     position: relative;
     padding: 3em 10%;
 
@@ -855,6 +854,7 @@ body {
 
 .footer-content {
     position: relative;
+
 }
 
 .footer-website-logo {
@@ -944,4 +944,27 @@ body {
 
     text-decoration: none;
     color: white;
+}
+
+.footer-designed-by {
+    color: rgba(136, 125, 125, 0.493);
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+   
+    max-width: 10em;
+
+    font-size: 1.3em;
+    font-weight: 50;
+}
+
+.footer-subscribe-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    display: grid;
+
+    grid-template-columns: auto auto;
 }
