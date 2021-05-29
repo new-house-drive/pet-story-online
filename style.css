@@ -132,7 +132,8 @@
 */
 
 :root {
-    --content-padding: 13.5%; 
+    --content-padding: 13.5%;
+    --background-gradient: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
 
 
@@ -284,18 +285,19 @@ body {
 
 
 .top-image-button {
-    background-color: rgb(189, 95, 8);
+    background-image: var(--background-gradient);
     color: white;
 
     width: 20rem;
     height: 3rem;
 
-    font-size: large;
+    font-size: larger;
+    text-transform: uppercase;
+
     padding-top: 1em;
     padding-bottom: 2em;
     
-    
-    border-radius: 1em;
+    border-radius: 4em;
     border: none;
 }
 
@@ -444,19 +446,18 @@ body {
 
     text-align: center;
     font-size: 2em;
-    
     font-weight: 100;
+
+    position: absolute;
 
 }
 
 
 .gallery-left-button {
-    position: absolute;
     left: -10%;
 }
 
 .gallery-right-button {
-    position: absolute;
     right: -10%;
 }
 
@@ -474,15 +475,21 @@ body {
 }
 
 .gallery-bottom-button-container button {
-    background-color: rgb(212, 117, 27);
+    background-color: #FE9013;
     color: white;
+    
     width: 100%;
+
     padding: 1em;
-    border-radius: 2em;
     margin-top: 3em;
+
+    border-radius: 2em;
     border: none;
-    font-size: 1.25em;
+
+
+    font-size: 1.5em;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .gallery-bottom-button-container button:hover {
@@ -499,6 +506,13 @@ body {
 
 
 .gallery-decoration-palm-tree {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.gallery-decoration-palm-tree-smaller {
+    display: none;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -685,16 +699,19 @@ body {
     background-image: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     color: white;
 
+    grid-column: 1/4;
+
     margin: auto;
     margin-top: 2em;
     margin-bottom: 2em;
+
     border-radius: 2em;
-    grid-column: 1/4;
     border: none;
 
     padding: 1em;
     padding-right: 4em;
     padding-left: 4em;
+
     text-transform: uppercase;
     font-size: 1.2em;
 }
@@ -788,7 +805,6 @@ body {
 
 .testimonials-userpic {
     position: absolute;
-
     left: 0;
 }
 
@@ -1031,4 +1047,164 @@ body {
     color: rgb(22, 92, 22);
     border: rgb(22, 92, 22) 1px solid;
     font-size: 1.2em;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 1200px) {
+    #content {
+        grid-template-columns: 1200px;
+    }
+
+    /* header */
+    .header {
+        padding-left: 1em;
+        padding-right: 15em;
+    }
+
+
+    /* top-image */
+
+    .top-image-container img {
+        max-width: 1200px;
+        max-height: 600px;
+    }
+
+    .top-image-big-orange-dot {
+        width: 25em;
+        height: 25em;
+
+        left: 47%;
+        top: 10%;
+        z-index: 0;
+
+    }
+
+    .top-image-title {
+        font-size: 5.5em;
+        font-weight: 1000;
+
+        padding-top: 1em;
+    }
+
+    .top-image-button-container {
+        top: 31em;
+        left: 43em;
+    }
+
+    .top-image-button {
+        width: 15em;
+        height: 2.5em;
+        font-size: large;
+
+    }
+
+    /* gallery */
+
+    .gallery-container {
+        padding-left: 1em;
+        padding-right: 2em;
+
+        padding-bottom: 30%
+    }
+
+    .gallery-top-container {
+        padding-top: 3em;
+        column-gap: 2em;
+    }
+
+    .gallery-top-element-image {
+        width: 500px;
+        height: 408px;
+        overflow: hidden;
+    }
+
+    .gallery {
+        column-gap: 1.5em;
+        row-gap: 8em;
+    }
+
+    .gallery-bottom-button-container {
+        left: 34%;
+        right: 33%;
+
+        width: 30%;
+    }
+
+    .gallery-bottom-button-container button {
+        margin-top: 5em;
+        padding-bottom: 1.3em;
+        font-size: 1.2em;
+    }
+
+    .gallery-left-button {
+        left: 40%
+    }
+
+    .gallery-right-button {
+        right: 40%;
+    }
+
+    .gallery-decoration-palm-tree {
+        display: none;
+    }
+
+    .gallery-decoration-palm-tree-smaller {
+        display: inherit;
+    }
+
+    /* DONATE CONTAINER */
+    .donate-container {
+        padding: 2em;
+    }
+
+    .donate-slides-button {
+        margin-top: 4em;
+
+        padding-left: 4em;
+        padding-right: 4em;
+
+        font-size: 1.1em;
+    }
+
+    /* Navigation arrows */
+    #left-transparent-arrow-between-slides {
+        bottom: 40%;
+    }
+
+    #right-transparent-arrow-between-slides {
+        bottom: 40%;
+    }
+
+    /* TESTIMONIALS CONTAINER  */
+    .testimonials-container {
+        padding: 2em;
+        padding-bottom: 15%;
+
+        grid-template-columns: auto auto auto;
+        column-gap: 3em;
+
+    }
+
+    #last-testimonials-element {
+        display: none;
+    }
+
+    .testimonials-leave-feedback {
+        left: 2em;
+        padding: 1em 4em;
+    }
+
+    /* FOOTER CONTAINER */
+    .footer-container {
+        padding: 3em 3em;
+    }
+
+    .footer-donate-button {
+        padding: 1.5em 3em;
+    }
+
+    .footer-social-media-container {
+        margin-top: 5em;
+    }
 }
