@@ -167,8 +167,8 @@ body {
     display: grid;
     position: absolute;
 
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     right: 0;
 
     z-index: 1;
@@ -193,6 +193,26 @@ body {
     text-align: left;
     font-size: large;
 
+}
+
+.website-logo-element {
+    color:white;
+    position: relative;
+
+    margin: auto;
+
+    text-align: left;
+    font-size: large;
+}
+
+.header-menu-icon-element {
+    display: none;
+}
+
+.header-white-line {
+    width: 100%;
+    background-color: white;
+    max-height: 0.2em;
 }
 
 .bamboo-logo {
@@ -735,7 +755,13 @@ body {
     bottom: 39%;
 }
 
+#left-green-arrow-between-slides {
+    display: none;
+}
 
+#right-green-arrow-between-slides {
+    display: none;
+}
 
 
 /* TESTIMONIALS ELEMENT */
@@ -1051,6 +1077,8 @@ body {
 
 /* MEDIA */
 
+/* Lower screen*/
+
 @media screen and (max-width: 1200px) {
     #content {
         grid-template-columns: 1200px;
@@ -1153,6 +1181,10 @@ body {
         display: inherit;
     }
 
+    .gallery-decoration-top-flower {
+        display: none;
+    }
+
     /* DONATE CONTAINER */
     .donate-container {
         padding: 2em;
@@ -1207,4 +1239,243 @@ body {
     .footer-social-media-container {
         margin-top: 5em;
     }
+}
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+
+    #content {
+        grid-template-columns: 768px;
+    }
+    /* header */
+    .header {
+        grid-template-rows: auto;
+        grid-template-columns: auto auto;
+
+
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .website-logo-element {
+        margin: 0;
+        padding: none;
+    }
+    .header-element {
+        display: none;
+    }
+
+    .website-logo {
+        margin: none;
+        border: none;
+    }
+
+    .header-menu-icon-element {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        row-gap: 2px;
+        max-width: 2em;
+        margin-left: 75%;
+        padding-top: 1.3em;
+        padding-bottom: 1.3em;
+
+    }
+
+    /* top image */
+    .top-image-container img {
+        max-width: 768px;
+        max-height: 373px;
+    }
+
+    .top-image-big-orange-dot {
+        width: 17em;
+        height: 17em;
+
+        top: 4em;
+        left: 52%;
+    }
+
+    .top-image-title {
+        font-size: 3.3em;
+    }
+
+    .top-image-button-container {
+        top: 18em;
+        left: 5em;
+    }
+
+    /* gallety*/
+    .gallery-top-element-image {
+        display: none;
+    }
+
+    .gallery-top-element {
+        max-width: 70%;
+        margin-bottom: 2em;
+    }
+
+    .gallery-decoration-top-flower {
+        display: inherit;
+    }
+
+    .gallery {
+        grid-template-columns: auto auto;
+        padding: 1em;
+    
+    }
+
+    .gallery-element-dissappearing {
+        display: none;
+    }
+
+    .gallery-left-button {
+        left: 33%;
+    }
+
+    .gallery-right-button {
+        right: 33%;
+    }
+
+    .gallery-bottom-button-container {
+        bottom: 8em;
+        width: 40%;
+        left: 30%;
+    }
+
+    .gallery-decoration-palm-tree-smaller {
+        left: -3.5em;
+    }
+
+    .gallery-decoration-flower img {
+        max-height: 13em;
+    }
+
+    /* donate */
+    .donate-container {
+        padding-top: 1.5em;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .donate {
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 0.2em;
+    }
+
+    .donate-top-text {
+        padding-left: 3em;
+        padding-right: 0px;
+        margin-top: 0px;
+    
+        text-align: left;
+
+    }
+
+    .donate-slides-container {
+        column-gap: 0em;
+        padding-right: 0em;
+        padding-left: 0em;
+    }
+
+    .donate-slides-element {
+        margin: 0;
+        max-width: 180px;
+    }
+
+    .donate-slides-element-image {
+        background-color: white;
+        position: relative;
+        width: 180px;
+        height: 180px;
+    
+        border: tomato 1px solid;
+        border-radius: 5px;
+        
+    }
+
+    #left-transparent-arrow-between-slides {
+        display: none;
+    }
+    
+    #right-transparent-arrow-between-slides {
+        display: none;
+    }
+    
+    #left-green-arrow-between-slides {
+        display: inherit;
+        position: absolute;
+        z-index: 1;
+        bottom: 22em;
+        left: 12.3em;
+    }
+    
+    #right-green-arrow-between-slides {
+        display: inherit;
+        position: absolute;
+        z-index: 1;
+        bottom: 22em;
+        right: 15.5em;
+    }
+
+    /* Donate slides pictures*/
+    #pay-img {
+        left: 2em;
+        top: 4em;    
+    }
+
+    /* Hand with the plant */
+    #hand-with-plant-img {
+        left: 3em;
+    }
+
+    #stable-img {
+        left: 5em;
+    }
+
+    #bottom-leaf-img {
+        left: 5.4em;
+    }
+
+    #middle-leaf-img {
+        left: 4.2em;
+    }
+
+    #top-leaf-img {
+        left: 5.5em;
+    }
+
+    #dollar-sign-img {
+        left: 5.1em;
+    }
+
+    /* monkey and banana */
+    #monkey-left-eye-img {
+
+        left: 5.6em;
+        bottom: 6.3em;
+    }
+    
+    #monkey-right-eye-img {
+    
+    
+        left: 6.1em;
+        bottom: 6.3em;
+    }
+    
+    #monkey-smile-img {
+    
+        left: 5.7em;
+        bottom: 5.6em;
+    }
+    
+    /* DONATE SLIDES BUTTON */
+    .donate-slides-button {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 25%;
+    }
+    
 }
