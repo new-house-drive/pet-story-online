@@ -107,6 +107,8 @@
         6.4 .footer-social-media-container
                 .footer-social-media-logo       
                 .footer-social-media-logo img
+                #footer-social-media-logo-facebook img
+                #footer-social-media-logo-youtube img
                 .footer-social-media-name
         6.5 .footer-bottom-links
                 .footer-bottom-links a
@@ -115,6 +117,114 @@
                 .footer-subscribe-title
                 .footer-subscribe-input input
                 .footer-subscribe-button button
+    7 MEDIA
+        7.1 max-width 1200px
+            #content
+            .header
+            
+
+            .top-image-container img
+            .top-image-big-orange-dot
+            .top-image-container img
+            .top-image-title
+            .top-image-button-container
+            .top-image-button
+
+
+            .gallery-container
+            .gallery-top-container
+            .gallery-top-element-image
+            .gallery
+            .gallery-bottom-button-container
+            .gallery-bottom-button-container button
+            .gallery-left-button
+            .gallery-right-button
+            .gallery-decoration-palm-tree
+            .gallery-decoration-palm-tree-smaller
+            .gallery-decoration-top-flower
+
+
+            .donate-container
+            .donate-slides-button
+            #left-transparent-arrow-between-slides
+            #right-transparent-arrow-between-slides
+
+            .testimonials-container
+            #last-testimonials-element
+            .testimonials-leave-feedback
+
+            .footer-container
+            .footer-donate-button
+            .footer-social-media-container
+
+        7.2 max-width 768px (tablet)
+            #content
+            .header
+            .website-logo-element
+            .header-element
+            .website-logo
+            .header-menu-icon-element
+
+
+            .top-image-container img
+            .top-image-big-orange-dot
+            .top-image-title
+            .top-image-button-container
+
+            .gallery-top-element-image
+            .gallery-top-element
+            .gallery-decoration-top-flower
+            .gallery
+            .gallery-element-dissappearing
+            .gallery-left-button
+            .gallery-right-button
+            .gallery-bottom-button-container
+            .gallery-decoration-palm-tree-smaller
+            .gallery-decoration-flower img
+
+            .donate-container
+            .donate
+            .donate-top-text
+            .donate-slides-container
+            .donate-slides-element
+            .donate-slides-element-image
+            #left-transparent-arrow-between-slides
+            #right-transparent-arrow-between-slides
+            #left-green-arrow-between-slides
+            #right-green-arrow-between-slides
+            #pay-img
+            #hand-with-plant-img
+            #stable-img
+            #bottom-leaf-img
+            #middle-leaf-img
+            #top-leaf-img
+            #dollar-sign-img
+            #monkey-left-eye-img
+            #monkey-right-eye-img
+            #monkey-smile-img
+            .donate-slides-button
+
+            .testimonials-container
+            .testimonials-title
+            .testimonials-element-wrap
+            .testimonials-element
+            .testimonials-feedback-text
+            #last-testimonials-element
+            .testimonials-scroll-bar
+            .testimonials-leave-feedback
+            .testimonials-leaf-decorations
+            .testimonials-leaf-decorations img
+
+            .footer-container
+            .footer-subscribe-container
+            .footer-social-media-container
+            .footer-social-media-name
+            .footer-bottom-links
+            .footer-donate-button
+        
+        7.3 max-width 768px
+
+
 
 
 
@@ -217,8 +327,13 @@ body {
 
 .bamboo-logo {
     position: absolute;
-    top: 1.5em;
+    top: 1.6em;
     left: 0.9em;
+
+}
+
+.bamboo-logo-smaller {
+    display: none;
 }
 
 .header-element a {
@@ -996,6 +1111,14 @@ body {
     left: 0.5em;
 }
 
+#footer-social-media-logo-facebook img {
+    left: 0.7em;
+}
+
+#footer-social-media-logo-youtube img {
+    left: 0.4em;
+}
+
 .footer-social-media-name {
 
     font-weight: 900;
@@ -1306,6 +1429,8 @@ body {
         left: 5em;
     }
 
+
+
     /* gallety*/
     .gallery-top-element-image {
         display: none;
@@ -1351,6 +1476,8 @@ body {
     .gallery-decoration-flower img {
         max-height: 13em;
     }
+
+
 
     /* donate */
     .donate-container {
@@ -1471,11 +1598,117 @@ body {
         bottom: 5.6em;
     }
     
-    /* DONATE SLIDES BUTTON */
     .donate-slides-button {
         margin-top: 1em;
         margin-bottom: 1em;
         margin-left: 25%;
     }
+
+
+    /* TESTIMONIALS */
+
+    .testimonials-container {
+        display: initial;
+        grid-template-rows: auto auto auto auto;
+        padding: 2em;
+        padding-bottom: 10em;
+
+    }
+
+    .testimonials-title {
+        grid-column: 0 / 1;
+    }
+
+    .testimonials-element-wrap {
+        margin-bottom: 2em;
+        max-height: 7em;
+        padding-bottom: 0.5em;
+        
+    }
+
+    .testimonials-element {
+        padding-bottom: 2em;
+        min-height: 1px;
+        height: 4.3em;
+
+    }
+
+    .testimonials-feedback-text {
+        max-height: 2.5em;
+    }
+
+    #last-testimonials-element {
+        display: none;
+    }
+
+    .testimonials-scroll-bar {
+        display: none;
+    }
+
+    .testimonials-leave-feedback {
+        left: 33%;
+        padding: 1em 3em;
+    }
+
+    .testimonials-leaf-decorations {
+        bottom: -4em;
+    }
+    .testimonials-leaf-decorations img {
+        width: 150px;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        padding: 1em 1em;
+        
+    }
     
+    .footer-subscribe-container {
+        display: none;
+    }
+
+    .footer-social-media-container {
+        grid-template-columns: 2em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 0px;
+    }
+
+    .footer-social-media-name {
+        display: none;
+    }
+
+    
+
+    .footer-bottom-links {
+        position: relative;
+        left: 0px;
+        column-gap: 0.5em;
+        width: 60%;
+        margin-top: 4em;
+    }
+
+    .footer-donate-button {
+        margin-top: 1.5em;
+    }
+}
+
+/* smartphone */
+
+@media screen and (max-width: 320px){
+    #content {
+        grid-template-columns: 480px;
+        max-width: 320px;
+    }
+
+    .website-logo {
+        font-size: 0.5em;
+    }
+
+    .bamboo-logo img {
+        height: 10px;
+    }
 }
