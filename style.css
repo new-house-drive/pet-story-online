@@ -1393,16 +1393,21 @@ body {
     }
 
     .header-menu-icon-element {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        row-gap: 2px;
-        max-width: 2em;
-        margin-left: 75%;
-        padding-top: 1.3em;
-        padding-bottom: 1.3em;
-
+        display: inherit;
+        background-color: black;
+        border: none;
+        max-width: 5em;
+        position: absolute;
+        right: 2em;
+        top: 1.4em;
+    
     }
+
+    #header-burger-menu-icon {
+        width: 2.5em;
+        height: 1.5em;
+    }
+
 
     /* top image */
     .top-image-container img {
@@ -1702,6 +1707,9 @@ body {
         max-width: 320px;
     }
 
+    .header {
+        padding: 0.1em;
+    }
 
     .website-logo {
         padding: 0px;
@@ -1725,14 +1733,13 @@ body {
     }
 
     .header-menu-icon-element {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        row-gap: 2px;
-        max-width: 2em;
-        margin-left: 0%;
-        padding-top: 1.3em;
-        padding-bottom: 1.3em;
+        top: 0.8em;
+        right: 0.6em;
+    }
+
+    #header-burger-menu-icon {
+        width: 1.5em;
+        height: 0.8em;
     }
     
 }
