@@ -4,10 +4,12 @@
 /* CONTENT
 /*  1. HEADER
         1.1 .header-element
-        1.2 .bamboo-logo
-        1.3 .header-element a
-        1.4 .header-element a:hover
-        1.5 .website-logo
+        1.2 .website-logo-element
+        1.3 .header-menu-icon-element
+        1.4 .bamboo-logo
+        1.5 .header-element a
+        1.6 .header-element a:hover
+        1.7 .website-logo
 
 /*  
     2 TOP IMAGE CONTAINER 
@@ -916,6 +918,8 @@ body {
     text-align: center;
 
     margin-bottom: 2em;
+    
+    color: #333B41
 
 }
 
@@ -1047,6 +1051,10 @@ body {
 
     bottom: -8em;
     right: 0;
+}
+
+.testimonials-leaf-decorations-smaller {
+    display: none;
 }
 
 /* FOOTER */
@@ -1976,6 +1984,40 @@ body {
         padding: 1em 4.5em;
         font-size: 0.9em;
         min-width: 20.5em;
+    }
+
+    /* Testimonials title */
+    .testimonials-container {
+        padding: 5px;
+        padding-bottom: 6em;
+    }
+    
+    .testimonials-title {
+        text-align: left;
+        padding-left: 2em;
+        padding-top: 1em;
+    }
+
+    .testimonials-element-wrap {
+        width: 65%;
+    }
+
+    .testimonials-leave-feedback {
+        bottom: 4em;
+        left: 3em;
+        padding: 1em 2.5em;
+        font-size: 1em;
+    }
+
+    .testimonials-leaf-decorations {
+        display: none;
+    }
+
+    .testimonials-leaf-decorations-smaller {
+        display: inherit;
+        position: absolute;
+        right: 10em;
+        bottom: -2em;
     }
 }
 
