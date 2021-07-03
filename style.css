@@ -1218,7 +1218,9 @@ body {
     padding: 0.7em 1.5em;
     color: rgb(22, 92, 22);
     border: rgb(22, 92, 22) 1px solid;
+    border-radius: 0.5em;
     font-size: 1.2em;
+
 }
 
 /* MEDIA */
@@ -2018,6 +2020,91 @@ body {
         position: absolute;
         right: 10em;
         bottom: -2em;
+    }
+
+    /* footer */
+
+    .footer-content {
+        min-height: 33em;
+    }
+
+    .footer-website-logo {
+        border: none;
+        max-width: 12em;
+        font-size: 1.5em;
+        font-weight: 400;
+        padding-left: 0em;
+    }
+
+    .footer-bamboo-logo {
+        left: 6.5em;
+        bottom: 0.1em;
+    }
+
+    .footer-bamboo-logo img {
+        height: 1.2em;
+    }
+
+    .footer-social-media-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        column-gap: 1em;
+        max-width: 10em;
+        padding-left: 1em;
+        padding-top: 1em;
+        position: relative;
+        padding-bottom: 1em;
+    }
+
+
+    .footer-subscribe-container {
+        display: inherit;
+        position: relative;
+        text-align: center;
+        margin-right: 10em;
+        padding-left: 1em;
+    }
+
+    .footer-subscribe-title {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .footer-subscribe-input {
+        margin-bottom: 0.5em;
+    }
+
+    .footer-subscribe-button button {
+        margin-top: 0.5em;
+        padding: 0.5em 2.5em;
+        color: black;
+    }
+
+    .footer-donate-button {
+        position: absolute;
+        bottom: 11em;
+        font-size: 0.9em;
+        font-weight: 500;
+
+        padding: 1.5em 3.5em;
+    }
+
+    .footer-bottom-links {
+        position: absolute;
+        font-size: 1em;
+        bottom: 0;
+        left: 0.5em;
+    }
+
+    .footer-designed-by {
+        position: absolute;
+        bottom: 4em;
+        right: 11em;
+        line-height: 1.8em;
+        font-size: 1em;
+        font-weight: 50;
+        font-family: Roboto;
+        color: rgba(255, 255, 255, 0.692);
     }
 }
 
