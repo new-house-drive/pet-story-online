@@ -2,17 +2,20 @@
 /* ROOT
 /* BODY
 /* CONTENT
-/*  1. HEADER
+/*  HEADER
+        1   .header
         1.1 .header-element
         1.2 .website-logo-element
         1.3 .header-menu-icon-element
-        1.4 .bamboo-logo
-        1.5 .header-element a
-        1.6 .header-element a:hover
-        1.7 .website-logo
+        1.4 .header-white-line
+        1.5 .bamboo-logo
+        1.6 .header-element a
+        1.7 .header-element a:hover
+        1.8 .website-logo
 
 /*  
-    2 TOP IMAGE CONTAINER 
+    TOP IMAGE CONTAINER
+        2   .top-image-container 
         2.1 .top-image-container img
         2.2 .top-image-big-orange-dot
         2.3 .top-image-title
@@ -21,7 +24,7 @@
         2.5 .top-image-button
         2.6 .top-image-button:hover
 
-    3 GALLERY
+    GALLERY
         3.1 .gallery-container
         3.2 .gallery-top-container
         3.3 .gallery-top-element
@@ -30,26 +33,33 @@
                 .gallery-top-text
                 .bottom-aligned
         3.4 .gallery
+
                 .gallery-element
                     .gallery-element img
+                    .gallery-element-dissappearing-wide-desktop
                     .gallery-text-title
                     .gallery-text-paragraph
                     .gallery-animal-food-icon
                     .gallery-animal-food-icon img
+
                 .gallery-navbar
                     .gallery-left-button, .gallery-right-button
                     .gallery-left-button
                     .gallery-right-button
                     .gallery-left-button:hover, .gallery-right-button:hover
+                
                 .gallery-bottom-button-container
                     .gallery-bottom-button-container button
                     .gallery-bottom-button-container button:hover
+                
                 GALLERY DECORATION IMAGES
                     .gallery-decoration-top-flower
                     .gallery-decoration-palm-tree
+                    .gallery-decoration-palm-tree-smaller
                     .gallery-decoration-flower
     
-    4 DONATE CONTAINER
+    DONATE CONTAINER
+        4   .donate-container
         4.1 .donate
                 .donate-top-text
                 .donate-bigger-text
@@ -82,6 +92,10 @@
         4.5 NAVIGATION ARROwS
                 #left-transparent-arrow-between-slides
                 #right-transparent-arrow-between-slides
+                #left-green-arrow-between-slides
+                #right-green-arrow-between-slides
+                #top-vertical-green-arrow-between-slides
+                #bottom-vertical-green-arrow-between-slides
 
     5 TESTIMONIALS
         5.1 .testimonials-container
@@ -99,6 +113,7 @@
         
         5.5 .testimonials-leave-feedback
         5.6 .testimonials-leaf-decorations
+        5.7 .testimonials-leaf-decorations-smaller
     
     6 FOOTER
         6.1 .footer-container
@@ -159,7 +174,7 @@
             .footer-donate-button
             .footer-social-media-container
 
-        7.2 max-width 768px (tablet)
+        7.2 max-width 780px (tablet)
             #content
             .header
             .website-logo-element
@@ -224,8 +239,78 @@
             .footer-bottom-links
             .footer-donate-button
         
-        7.3 max-width 768px
+        7.3 max-width 320px
+            #content
 
+            .header
+            .website-logo
+            .website-logo-element
+            .bamboo-logo
+            .bamboo-logo img
+            .header-menu-icon-element
+            #header-burger-menu-icon
+            
+            .top-image-container
+            .top-image-container img
+            .top-image-big-orange-dot
+            .top-image-title
+            .top-image-button-container
+            .top-image-button
+
+            .gallery-top-container
+            .gallery-top-title
+            .gallery-top-text
+            .gallery-top-element h2
+
+            .gallery
+            .gallery-element 
+            .gallery-navbar
+
+            .gallery-bottom-button-container
+            .gallery-bottom-button-container button
+
+            .gallery-decoration-top-flower 
+            .gallery-decoration-top-flower img
+            .gallery-decoration-palm-tree-smaller
+            .gallery-decoration-palm-tree-smaller img
+            .gallery-decoration-flower
+            .gallery-decoration-flower img
+
+            .donate-container
+            .donate
+            .donate-top-text
+            .donate-bigger-text
+            .donate-medium-text
+            .donate-smaller-text
+
+            .donate-slides-container
+            .donate-slides-title
+            .donate-slides-element
+            .donate-slides-element p
+            #left-green-arrow-between-slides
+            #right-green-arrow-between-slides img #left-green-arrow-between-slides img
+            #right-green-arrow-between-slides
+            .donate-slides-button
+
+            .testimonials-container
+            .testimonials-title
+            .testimonials-element-wrap
+            .testimonials-leave-feedback
+            .testimonials-leaf-decorations
+            .testimonials-leaf-decorations-smaller
+
+            .footer-content
+            .footer-website-logo
+            .footer-bamboo-logo
+            .footer-bamboo-logo img
+            .footer-social-media-container
+            .footer-subscribe-container
+            .footer-subscribe-title
+            .footer-subscribe-input
+            .footer-subscribe-button button
+            .footer-donate-button
+            .footer-bottom-links
+            .footer-designed-by
 
 
 
@@ -1741,6 +1826,8 @@ body {
         grid-template-columns: 480px;
         max-width: 320px;
     }
+
+    /* Header */
 
     .header {
         padding: 0.1em;
